@@ -28,6 +28,35 @@ The algorithm is tested and evaluated on seven different datasets, with variatio
 
 The tests, which are in the <a href="https://github.com/FedericoMontini98/Hadoop_K-means/scripts/data">scripts/data</a> directory,  were evaluated using a MATLAB plot for datasets with dimensions less than or equal to 3. For datasets with dimensions greater than 3, the Silhouette score was used to evaluate the algorithm's performance. However, for two tests, the results were not satisfactory, and the K-Means++ algorithm was used instead, which resulted in better performance. Additionally, the impact of the number of reducers on algorithm execution time was examined, and the average execution time for one iteration of the algorithm was recorded for different numbers of reducers. See the documentation in the <a href="https://github.com/FedericoMontini98/Hadoop_K-means/docs/">docs</a> directory for further details.
 
+# Structure of the repository 
+
+```
+K-Means-Clustering-Algorithm-using-Hadoop-MapReduce
+|
+├── Hadoop_K-means
+│   └── src
+│       ├── java/it/unipi/hadoop
+|       └── resources
+|
+├── scripts
+│   ├── data
+│   |   ├── test1
+│   |   ├── test2
+│   |   ├── test3
+│   |   ├── test4
+│   |   ├── test5
+│   |   ├── test6
+|   |   └── test7  
+|   |
+│   ├── hadoop_run_scripts
+│   ├── dataset_generation_scripts
+│   └── results_analysis_scripts
+|
+├── javadoc
+|
+└── docs 
+```
+
 
 <h2>💖Like our work?</h2>
 
